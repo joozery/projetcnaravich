@@ -230,5 +230,10 @@ export default defineConfig({
 				'@babel/types'
 			]
 		}
-	}
+	},
+	preview: {
+		port: 4173,
+		strictPort: true,
+	},
+	base: './'
 });
