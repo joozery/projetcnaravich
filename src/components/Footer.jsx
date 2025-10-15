@@ -75,7 +75,7 @@ const Footer = () => {
               className="flex items-center gap-2 text-gray-600 hover:text-primary-600 cursor-pointer transition-colors"
             >
               <Phone className="w-5 h-5" />
-              <span className="font-medium">02-888-8888 กด 04</span>
+              <span className="font-medium">096-396-7945</span>
             </motion.div>
             
             <motion.div
@@ -83,7 +83,7 @@ const Footer = () => {
               className="flex items-center gap-2 text-gray-600 hover:text-primary-600 cursor-pointer transition-colors"
             >
               <Mail className="w-5 h-5" />
-              <span className="font-medium">support@debtmarket.com</span>
+              <span className="font-medium">naravichsangthong2534@gmail.com</span>
             </motion.div>
             
             <motion.div
@@ -91,7 +91,7 @@ const Footer = () => {
               className="flex items-center gap-2 text-gray-600 hover:text-primary-600 cursor-pointer transition-colors"
             >
               <MapPin className="w-5 h-5" />
-              <span className="font-medium">กรุงเทพมหานคร</span>
+              <span className="font-medium">35 ม.8 ต.น้ำอ้อม อ.กันทลักษณ์ จ.ศรีสะเกษ 33110</span>
             </motion.div>
           </div>
         </motion.div>
@@ -107,8 +107,8 @@ const Footer = () => {
                 <Phone className="w-4 h-4" />
               </div>
               <div>
-                <div className="font-semibold">Debt Contact Center</div>
-                <div className="text-sm text-primary-100">02-888-8888 กด 04</div>
+                <div className="font-semibold">ติดต่อเรา</div>
+                <div className="text-sm text-primary-100">096-396-7945</div>
               </div>
             </div>
 

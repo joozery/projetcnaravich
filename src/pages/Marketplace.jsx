@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
 import { Search, Filter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -160,41 +159,22 @@ const Marketplace = ({ onViewDebt, user }) => {
       </Helmet>
 
       {/* Hero Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 p-8 md:p-12 text-center"
-      >
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 p-8 md:p-12 text-center">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-50">
           <div className="w-full h-full bg-gradient-to-br from-white/10 to-transparent"></div>
         </div>
         
         <div className="relative z-10 space-y-4">
-          <motion.h1 
-            className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg"
-            initial={{ scale: 0.9 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
+          <h1 className="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
             ตลาดหนี้มือถือ
-          </motion.h1>
-          <motion.p 
-            className="text-lg md:text-xl text-primary-100 max-w-2xl mx-auto"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
-          >
+          </h1>
+          <p className="text-lg md:text-xl text-primary-100 max-w-2xl mx-auto">
             เลือกซื้อหนี้คุณภาพ ลงทุนอย่างชาญฉลาด
-          </motion.p>
+          </p>
           
           {/* Stats */}
-          <motion.div 
-            className="flex justify-center gap-8 mt-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
+          <div className="flex justify-center gap-8 mt-8">
             <div className="text-center">
               <div className="text-2xl font-bold text-white">{debts.length}</div>
               <div className="text-sm text-primary-200">รายการหนี้</div>
@@ -207,17 +187,12 @@ const Marketplace = ({ onViewDebt, user }) => {
               <div className="text-2xl font-bold text-white">24/7</div>
               <div className="text-sm text-primary-200">บริการ</div>
             </div>
-          </motion.div>
+          </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* Search and Filter Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2 }}
-        className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 space-y-6"
-      >
+      <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 space-y-6">
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1 relative">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-primary/60 w-5 h-5" />
@@ -284,7 +259,7 @@ const Marketplace = ({ onViewDebt, user }) => {
             อัปเดตล่าสุด: {new Date().toLocaleDateString('th-TH')}
           </div>
         </div>
-      </motion.div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
         {filteredDebts.map((debt, index) => (
@@ -298,13 +273,9 @@ const Marketplace = ({ onViewDebt, user }) => {
       </div>
 
       {filteredDebts.length === 0 && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="text-center py-20"
-        >
+        <div className="text-center py-20">
           <p className="text-xl text-muted-foreground">ไม่พบรายการหนี้ที่ตรงกับการค้นหา</p>
-        </motion.div>
+        </div>
       )}
     </div>
   );
